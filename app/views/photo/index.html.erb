@@ -1,0 +1,5 @@
+<% if @photos.any? %>
+  <% @photos.each do |photo| %>
+   <%= image_tag photo.image_url, class: "img" %> 
+  <% end %>
+<% end %>
